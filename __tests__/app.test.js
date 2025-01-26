@@ -63,7 +63,7 @@ describe("Unit Tests for POST /api/events", () => {
       .post("/api/v1/events")
       .send({}) // No data sent
       .expect("Content-Type", /json/)
-      .expect(200);
+      .expect(400);
 
     expect(response.body.error).toBeDefined();
   });
