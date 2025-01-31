@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "node.js",
+  "type": "module",
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --watch --verbose",
     "dev": "cross-env NODE_ENV=development nodemon app"
