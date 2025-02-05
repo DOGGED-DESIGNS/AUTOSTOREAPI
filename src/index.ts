@@ -13,9 +13,17 @@ import cors from "cors";
 import morgan from "morgan";
 import dotEnv from "dotenv";
 
-const Env = dotEnv.config({});
+dotEnv.config({ path: `${__dirname}/../config.env` });
+
+const PORT = process.env.PORT || 5000;
 
 const app = express();
+
+const start = () => {
+  app.listen(PORT, () => {
+    console.log(`this app is running on port ${PORT}`);
+  });
+};
 
 // const express = require("express");
 // const bodyparser = require("body-parser");
