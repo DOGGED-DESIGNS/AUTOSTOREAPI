@@ -5,7 +5,7 @@
   "main": "node.js",
   "scripts": {
     "start": "nodemon",
-    "test": "jest --watch --verbose --coverage"
+    "test": "jest --watch --verbose"
   },
   "author": "",
   "license": "ISC",
