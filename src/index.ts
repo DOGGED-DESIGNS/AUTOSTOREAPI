@@ -19,14 +19,13 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-
-
-
 const start = () => {
-  app.listen(PORT, ()=>{
-    console.log(`this app is listening to port ${PORT}`)
-  })
+  app.listen(PORT, () => {
+    console.log(`this app is listening to port ${PORT}`);
+  });
 };
+
+start();
 
 // const express = require("express");
 // const bodyparser = require("body-parser");
