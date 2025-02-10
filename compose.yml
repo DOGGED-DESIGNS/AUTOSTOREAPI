@@ -93,7 +93,5 @@ services:
     # this is done so that the data inside the mongodb container is persisted even if the container is stopped
     volumes:
       - anime:/data/db
-
 # define the volumes to be used by the services
-volumes:
-  anime:
+
